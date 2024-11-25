@@ -1,0 +1,73 @@
+/* index.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #b78207;
+}
+
+.toto {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #edb953;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.description p, .team-description h2, .team-photos h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.description div, .team-description p {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.team-photos {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.team-photo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.photo {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 10px;
+    width: calc(50% - 20px); /* Pour les écrans moyens */
+    max-width: 200px;
+    text-align: center;
+}
+
+.photo img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.photo p {
+    font-size: 0.9em;
+    color: #333;
+}
+
+/* Media Query pour les petits écrans */
+@media (max-width: 768px) {
+    .photo {
+        width: 100%; /* Affiche chaque photo sur une ligne */
+    }
+}

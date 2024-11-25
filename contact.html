@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - BloomPetals</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <header>
+        <h1>Contactez-nous :)</h1>
+    </header>
+    <main>
+        <section class="contact-form">
+            <h2>Formulaire de Contact</h2>
+            <form action="#" method="POST">
+              
+                <label for="civilite">Civilité :</label>
+                <select id="civilite" name="civilite" required>
+                    <option value="">Sélectionnez</option>
+                    <option value="monsieur">Monsieur</option>
+                    <option value="madame">Madame</option>
+                    <option value="mademoiselle">Mademoiselle</option>
+                </select>
+
+              
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" required>
+
+
+                <label for="prenom">Prénom :</label>
+                <input type="text" id="prenom" name="prenom" required>
+
+                
+                <label for="adresse">Adresse Postale :</label>
+                <input type="text" id="adresse" name="adresse" required>
+
+              
+                <div class="privacy-policy">
+                    <input type="checkbox" id="confidentialite" name="confidentialite" required>
+                    <label for="confidentialite">J'accepte la politique de confidentialité</label>
+                </div>
+
+              
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
